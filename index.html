@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chandan Gaharwar, Full-Stack Developer</title>
+<meta name="description" content="Full-stack developer in Raipur with five years of experience in Laravel, Node.js and React. Sole developer behind four production web products.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Chandan Gaharwar, Full-Stack Developer">
+<meta property="og:description" content="One developer. Four products. Every server. Laravel, Node.js and React.">
+<meta name="theme-color" content="#14090d">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23f0b443'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' font-family='Georgia,serif' fill='%2314090d'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<script>
+  /* Apply a saved theme before first paint to avoid a flash. */
+  try { var t = localStorage.getItem("theme"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+<style>
+  :root, :root[data-theme="dark"] {
+    --bg: #14090d;
+    --surface: #1d1015;
+    --ink: #f5ece0;
+    --muted: #b9a9a4;
+    --line: #3a2530;
+    --accent: #f0b443;
+    --accent-ink: #1a0d12;
+    --display: "Instrument Serif", "Iowan Old Style", Georgia, serif;
+    --body: "Hanken Grotesk", "Segoe UI", system-ui, sans-serif;
+    --max: 1120px;
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+      --bg: #fbf8f6; --surface: #f1ebe8; --ink: #2a1219; --muted: #6b5560;
+      --line: #dccfd0; --accent: #8f1d3f; --accent-ink: #ffffff;
+    }
+  }
+  :root[data-theme="light"] {
+    --bg: #fbf8f6; --surface: #f1ebe8; --ink: #2a1219; --muted: #6b5560;
+    --line: #dccfd0; --accent: #8f1d3f; --accent-ink: #ffffff;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 5rem; -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 400 1.0625rem/1.65 var(--body);
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+  .wrap { width: min(100% - 2.5rem, var(--max)); margin-inline: auto; }
+  h1, h2, h3, p, ul, ol, dl, dd { margin: 0; }
+  ul, ol { padding: 0; list-style: none; }
+
+  .skip { position: absolute; left: 1rem; top: -4rem; background: var(--accent); color: var(--accent-ink); padding: .6rem 1rem; border-radius: 999px; font-weight: 600; z-index: 20; }
+  .skip:focus { top: 1rem; }
+
+  /* Header */
+  .top { position: sticky; top: 0; z-index: 10; background: var(--bg); border-bottom: 1px solid var(--line); }
+  @supports (backdrop-filter: blur(1px)) {
+    .top { background: color-mix(in srgb, var(--bg) 78%, transparent); backdrop-filter: blur(14px); }
+  }
+  .bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .5rem 2rem; padding-block: 1rem; }
+  .brand { font-family: var(--display); font-size: 1.5rem; text-decoration: none; letter-spacing: .01em; }
+  .nav { display: flex; flex-wrap: wrap; align-items: center; gap: .25rem 1.5rem; }
+  .nav a { text-decoration: none; color: var(--muted); font-weight: 500; font-size: .98rem; }
+  .nav a:hover { color: var(--ink); }
+  .toggle { font: inherit; font-weight: 500; font-size: .92rem; color: var(--ink); background: transparent; border: 1px solid var(--line); border-radius: 999px; padding: .35rem .95rem; cursor: pointer; }
+  .toggle:hover { border-color: var(--accent); }
+
+  /* Hero */
+  .hero { padding-block: clamp(3rem, 8vw, 6rem) clamp(3.5rem, 9vw, 7rem); }
+  .hero-grid { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); gap: 3.5rem 4rem; align-items: center; }
+  .headline { font-family: var(--display); font-weight: 400; font-size: clamp(3rem, 8.2vw, 6.6rem); line-height: .95; letter-spacing: -.02em; margin-bottom: 2rem; }
+  .headline span { display: block; }
+  .lede { max-width: 33rem; color: var(--muted); font-size: 1.15rem; margin-bottom: 2rem; }
+  .actions { display: flex; flex-wrap: wrap; gap: .8rem; }
+  .btn { display: inline-block; padding: .8rem 1.5rem; border-radius: 999px; border: 1.5px solid var(--accent); background: var(--accent); color: var(--accent-ink); font-weight: 600; text-decoration: none; }
+  .btn:hover { filter: brightness(1.08); }
+  .btn.ghost { background: transparent; color: var(--ink); border-color: var(--line); }
+  .btn.ghost:hover { border-color: var(--accent); filter: none; }
+
+  /* The one memorable shape: an arch, as in a mandap doorway */
+  .arch {
+    position: relative; width: min(100%, 360px); margin-inline: auto;
+    padding: 6.25rem 2rem 2.5rem; text-align: center;
+    border: 1.5px solid var(--accent); border-radius: 999px 999px 6px 6px;
+    background: var(--surface);
+  }
+  .arch::before { content: ""; position: absolute; inset: .55rem; border: 1px solid var(--line); border-radius: 999px 999px 4px 4px; pointer-events: none; }
+  .arch h2 { font-family: var(--display); font-weight: 400; font-size: 1.7rem; line-height: 1.15; margin-bottom: 1.25rem; }
+  .arch li { padding: .5rem 0; border-top: 1px solid var(--line); font-size: 1rem; }
+  .arch p { margin-top: 1.1rem; color: var(--muted); font-size: .95rem; }
+
+  /* One orchestrated moment: headline lines rise in once on load */
+  @keyframes rise { from { opacity: 0; transform: translateY(.3em); } to { opacity: 1; transform: none; } }
+  .headline span { animation: rise .9s cubic-bezier(.2, .7, .2, 1) both; }
+  .headline span:nth-child(2) { animation-delay: .15s; }
+  .headline span:nth-child(3) { animation-delay: .3s; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .headline span { animation: none; }
+  }
+
+  /* Sections */
+  .block { padding-block: clamp(3.5rem, 8vw, 6rem); border-top: 1px solid var(--line); }
+  .block-title { font-family: var(--display); font-weight: 400; font-size: clamp(2.4rem, 5.5vw, 4rem); line-height: 1; letter-spacing: -.015em; margin-bottom: 2.5rem; }
+
+  .entry { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 1rem 3rem; padding-block: 2rem; border-top: 1px solid var(--line); }
+  .entry:last-child { border-bottom: 1px solid var(--line); }
+  .entry h3 { font-family: var(--display); font-weight: 400; font-size: clamp(1.7rem, 3vw, 2.2rem); line-height: 1.1; margin-bottom: .5rem; }
+  .result { color: var(--accent); font-weight: 600; font-size: 1rem; }
+  .entry-body p { max-width: 36rem; color: var(--muted); }
+  .tags { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }
+  .tag { border: 1px solid var(--line); border-radius: 999px; padding: .25rem .85rem; font-size: .95rem; color: var(--ink); }
+
+  /* Timeline: a real sequence, so a rule and markers carry meaning */
+  .timeline { margin-left: .4rem; border-left: 1px solid var(--line); }
+  .stop { position: relative; padding: 0 0 3rem 2.25rem; }
+  .stop:last-child { padding-bottom: 0; }
+  .stop::before { content: ""; position: absolute; left: -.4rem; top: .75rem; width: .8rem; height: .8rem; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 5px var(--bg); }
+  .when { color: var(--muted); font-size: .95rem; font-weight: 500; }
+  .stop h3 { font-family: var(--display); font-weight: 400; font-size: clamp(1.7rem, 3vw, 2.2rem); line-height: 1.1; margin: .2rem 0 .15rem; }
+  .org { color: var(--accent); font-weight: 600; margin-bottom: .75rem; }
+  .stop ul { max-width: 44rem; }
+  .stop li { position: relative; padding: .25rem 0 .25rem 1.1rem; color: var(--muted); }
+  .stop li::before { content: ""; position: absolute; left: 0; top: .95em; width: .4rem; height: 1px; background: var(--muted); }
+
+  /* Skills */
+  .skill { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: .75rem 3rem; padding-block: 1.25rem; border-top: 1px solid var(--line); }
+  .skill:last-child { border-bottom: 1px solid var(--line); }
+  .skill h3 { font-weight: 600; font-size: 1.05rem; }
+  .skill .tags { margin-top: 0; }
+
+  /* Education + contact */
+  .edu li { padding-block: 1rem; border-top: 1px solid var(--line); }
+  .edu li:last-child { border-bottom: 1px solid var(--line); }
+  .edu strong { display: block; font-family: var(--display); font-weight: 400; font-size: 1.6rem; line-height: 1.2; }
+  .edu span { color: var(--muted); }
+  .contact { padding-block: clamp(4rem, 10vw, 8rem); border-top: 1px solid var(--line); }
+  .contact p { color: var(--muted); max-width: 30rem; margin-bottom: 1.25rem; }
+  .mail { display: inline-block; font-family: var(--display); font-size: clamp(1.45rem, 7.4vw, 5.6rem); line-height: 1.05; letter-spacing: -.02em; color: var(--accent); text-decoration-thickness: 2px; text-underline-offset: .12em; margin-bottom: 1.75rem; overflow-wrap: anywhere; }
+  .links { display: flex; flex-wrap: wrap; gap: .5rem 1.75rem; font-weight: 600; }
+  .foot { padding-block: 1.75rem 2.5rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .92rem; }
+
+  @media (max-width: 860px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .entry, .skill { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#work">Skip to work</a>
+
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="#top">Chandan Gaharwar</a>
+    <nav class="nav" aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <button class="toggle" id="theme" type="button" aria-label="Switch colour theme">Light mode</button>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1 class="headline">
+          <span>One developer.</span>
+          <span>Four products.</span>
+          <span>Every server.</span>
+        </h1>
+        <p class="lede">I'm Chandan Gaharwar, a full-stack developer in Raipur with five years of experience in Laravel, Node.js and React. At Clixahub I'm the only developer, building and running the wedding matchmaking software and the company's other products.</p>
+        <div class="actions">
+          <a class="btn" href="mailto:chandanck1998@gmail.com">Email me</a>
+          <!-- Put your resume PDF in the same folder and name it resume.pdf -->
+          <a class="btn ghost" href="resume.pdf">Download resume</a>
+        </div>
+      </div>
+      <aside class="arch" aria-labelledby="arch-title">
+        <h2 id="arch-title">Roles I cover at Clixahub</h2>
+        <ul>
+          <li>Architecture</li>
+          <li>Backend and frontend code</li>
+          <li>Servers and deployments</li>
+          <li>Bug fixes and security</li>
+        </ul>
+        <p>On most teams, these belong to several people.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="block" id="work" aria-labelledby="work-title">
+    <div class="wrap">
+      <h2 class="block-title" id="work-title">Work</h2>
+
+      <article class="entry">
+        <div>
+          <h3>Four products, one developer</h3>
+          <p class="result">Designed, built and shipped</p>
+        </div>
+        <div class="entry-body">
+          <p>Working directly with the founder, I built these products and improved several existing ones. I also built a new React single-page application and AI-powered auto-complete.</p>
+          <ul class="tags" aria-label="Products">
+            <li class="tag">AutoCRM</li>
+            <li class="tag">Dhanlaxmi</li>
+            <li class="tag">RishteyDekhe</li>
+            <li class="tag">RishteyMilan</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div>
+          <h3>Chat system built in-house</h3>
+          <p class="result">About INR 1.5 lakh saved each year</p>
+        </div>
+        <div class="entry-body">
+          <p>The company was paying a third-party service for real-time chat. I built a replacement in-house, so that cost is gone and the chat data stays in the company's own systems.</p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div>
+          <h3>Security fix in production</h3>
+          <p class="result">A major vulnerability closed</p>
+        </div>
+        <div class="entry-body">
+          <p>I found a major security vulnerability in the PHP backend and the production environment, and fixed it. The details stay private to protect the company.</p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div>
+          <h3>Servers, deployments and bug fixes</h3>
+          <p class="result">100+ bugs and production issues resolved</p>
+        </div>
+        <div class="entry-body">
+          <p>I set up and maintain the servers, handle deployments, and resolve production issues across the platform, so the products stay online.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="block" id="experience" aria-labelledby="experience-title">
+    <div class="wrap">
+      <h2 class="block-title" id="experience-title">Experience</h2>
+      <ol class="timeline">
+        <li class="stop">
+          <p class="when">Jun 2025 to present, remote</p>
+          <h3>Senior Software Engineer</h3>
+          <p class="org">Clixahub Pvt. Ltd.</p>
+          <ul>
+            <li>Sole developer across the product suite, working directly with the founder.</li>
+            <li>Own server setup, deployments and maintenance for all production systems.</li>
+            <li>Built an in-house real-time chat system and AI-powered auto-complete.</li>
+          </ul>
+        </li>
+        <li class="stop">
+          <p class="when">Apr 2023 to May 2025, remote</p>
+          <h3>Software Engineer</h3>
+          <p class="org">Symentix Technologies Pvt. Ltd.</p>
+          <ul>
+            <li>Built and maintained REST APIs in Node.js on a remote team.</li>
+            <li>Integrated Firebase push notifications and the Twilio Conversations API.</li>
+            <li>Integrated OpenAI APIs and vector databases for AI-driven features.</li>
+          </ul>
+        </li>
+        <li class="stop">
+          <p class="when">Mar 2022 to Mar 2023, remote</p>
+          <h3>Junior, then Senior Software Engineer</h3>
+          <p class="org">Clixahub Pvt. Ltd.</p>
+          <ul>
+            <li>Promoted within six months.</li>
+            <li>Led the move from Core PHP to Laravel.</li>
+            <li>Worked on e-commerce platforms and internal CRM and ERP systems.</li>
+          </ul>
+        </li>
+        <li class="stop">
+          <p class="when">Jun 2021 to Feb 2022, on-site</p>
+          <h3>Web Developer</h3>
+          <p class="org">GoDigital Pvt. Ltd.</p>
+          <ul>
+            <li>Built responsive web applications.</li>
+            <li>Managed backends in Core PHP and WordPress, working directly with clients.</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="block" id="skills" aria-labelledby="skills-title">
+    <div class="wrap">
+      <h2 class="block-title" id="skills-title">Skills</h2>
+      <div>
+        <div class="skill"><h3>Languages</h3><ul class="tags"><li class="tag">PHP</li><li class="tag">JavaScript</li><li class="tag">TypeScript</li><li class="tag">SQL</li></ul></div>
+        <div class="skill"><h3>Backend</h3><ul class="tags"><li class="tag">Laravel</li><li class="tag">Node.js</li><li class="tag">Core PHP</li><li class="tag">REST APIs</li><li class="tag">JWT</li><li class="tag">MVC</li></ul></div>
+        <div class="skill"><h3>Frontend</h3><ul class="tags"><li class="tag">React</li><li class="tag">HTML</li><li class="tag">SCSS</li><li class="tag">Bootstrap</li></ul></div>
+        <div class="skill"><h3>Databases</h3><ul class="tags"><li class="tag">MySQL</li><li class="tag">PostgreSQL</li><li class="tag">MongoDB</li><li class="tag">Vector databases</li></ul></div>
+        <div class="skill"><h3>LLM APIs</h3><ul class="tags"><li class="tag">Claude</li><li class="tag">Gemini</li><li class="tag">OpenAI</li><li class="tag">OpenRouter</li><li class="tag">LangChain</li><li class="tag">RAG</li><li class="tag">Prompt engineering</li></ul></div>
+        <div class="skill"><h3>Open-weight LLMs</h3><ul class="tags"><li class="tag">Ollama</li><li class="tag">llama.cpp</li><li class="tag">Self-hosted inference</li></ul></div>
+        <div class="skill"><h3>LLM cost control</h3><ul class="tags"><li class="tag">Model routing</li><li class="tag">Response caching</li><li class="tag">Prompt caching</li><li class="tag">Token budgeting</li></ul></div>
+        <div class="skill"><h3>Cloud and DevOps</h3><ul class="tags"><li class="tag">AWS (IAM, S3)</li><li class="tag">Docker</li><li class="tag">GitHub Actions</li><li class="tag">Server setup</li><li class="tag">Git</li></ul></div>
+        <div class="skill"><h3>Integrations</h3><ul class="tags"><li class="tag">Firebase Cloud Messaging</li><li class="tag">Twilio Conversations</li><li class="tag">Razorpay</li><li class="tag">Stripe</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" aria-labelledby="edu-title">
+    <div class="wrap">
+      <h2 class="block-title" id="edu-title">Education</h2>
+      <ul class="edu">
+        <li><strong>Bachelor of Computer Applications</strong><span>Kalinga University, Raipur, 2016 to 2019</span></li>
+        <li><strong>Advanced Diploma in Software Engineering</strong><span>WAP Institute, Muzaffarpur, 2019 to 2023</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <h2 class="block-title" id="contact-title">Contact</h2>
+      <p>Open to conversations about full-stack and AI-enabled product work.</p>
+      <a class="mail" href="mailto:chandanck1998@gmail.com">chandanck1998@gmail.com</a>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/chandanck1998">LinkedIn</a>
+        <!-- TODO: replace YOUR-USERNAME with your GitHub username, or delete this line. -->
+        <a href="https://github.com/YOUR-USERNAME">GitHub</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">&copy; <span id="year">2026</span> Chandan Gaharwar. Hand-built with HTML and CSS, hosted on GitHub Pages.</div>
+</footer>
+
+<script>
+  (function () {
+    var root = document.documentElement, btn = document.getElementById("theme");
+    function current() {
+      var t = root.getAttribute("data-theme");
+      return t || (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+    }
+    function label() { btn.textContent = current() === "dark" ? "Light mode" : "Dark mode"; }
+    label();
+    btn.addEventListener("click", function () {
+      var next = current() === "dark" ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      try { localStorage.setItem("theme", next); } catch (e) {}
+      label();
+    });
+    document.getElementById("year").textContent = new Date().getFullYear();
+  })();
+</script>
+</body>
+</html>
