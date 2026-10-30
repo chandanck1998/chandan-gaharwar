@@ -2,9 +2,9 @@
 
 **Full-Stack Developer** in Raipur, Chhattisgarh, India
 
-[Live portfolio](https://YOUR-USERNAME.github.io/chandan-gaharwar/) | [LinkedIn](https://www.linkedin.com/in/chandanck1998) | [Email](mailto:chandanck1998@gmail.com) | [Resume (PDF)](resume.pdf)
+[Live portfolio](https://chandanck1998.github.io/chandan-gaharwar/) | [LinkedIn](https://www.linkedin.com/in/chandanck1998) | [Email](mailto:chandanck1998@gmail.com) | [Resume (PDF)](resume.pdf)
 
-<!-- TODO: replace YOUR-USERNAME above with your GitHub username. -->
+<!-- TODO: replace chandanck1998 above with your GitHub username. -->
 
 ## Summary
 
